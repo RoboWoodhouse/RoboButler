@@ -25,7 +25,7 @@ def getstatus(devices):
     return devices
 
 def writexmlrow(device,container):
-    col=etree.SubElement(container,'div',{'class':'col-xs-6 col-sm-2 placeholder'})
+    col=etree.SubElement(container,'div',{'class':'col-xs-6 col-md-2 placeholder'})
     if (device.status=='on'):
         image1=etree.SubElement(col,'img',{'src':'./images/green.png','width':'200','height':'200','class':'img-responsive','align':'center'})
     else:
