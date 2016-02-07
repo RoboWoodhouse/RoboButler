@@ -68,7 +68,7 @@ def writexml(times_in, lines_in, destinations_in):
         th2.text=str(lines_in[i])
         th3=etree.SubElement(tr,'th')
         th3.text=destinations_in[i]
-        output=etree.tostring(thead, pretty_print=True)+etree.tostring(tbody, pretty_print=True, encoding='utf-8')
+    output=etree.tostring(thead, pretty_print=True)+etree.tostring(tbody, pretty_print=True, encoding='utf-8')
 
     return output
 def writeindex(input):

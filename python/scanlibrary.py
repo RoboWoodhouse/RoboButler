@@ -24,8 +24,11 @@ def getstatus(devices):
                 devices[j].turn_on()
     return devices
 
-def writexmlrow(device,container):
-    col=etree.SubElement(container,'div',{'class':'col-xs-6 col-md-2 placeholder'})
+def writexmlrow(device,container,number):
+    if (number==1):
+        col=etree.SubElement(container,'div',{'class':'col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 placeholder'})
+    else:
+        col=etree.SubElement(container,'div',{'class':'col-lg-2 col-md-2 placeholder'})
     if (device.status=='on'):
         image1=etree.SubElement(col,'img',{'src':'./images/green.png','width':'200','height':'200','class':'img-responsive','align':'center'})
     else:
@@ -36,8 +39,10 @@ def writexmlrow(device,container):
 
 def writexmlpart(devices):
     container=etree.Element('div',{'class':'row placeholder'})
+    i=1
     for instance in devices:
-        writexmlrow(instance,container)
+        writexmlrow(instance,container,i)
+        i=i+1
     output=etree.tostring(container, pretty_print=True)
     with open("./parts/part1_1.html","r") as file:
         part1=file.read()
