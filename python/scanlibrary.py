@@ -39,15 +39,15 @@ def writexmlpart(devices):
     for instance in devices:
         writexmlrow(instance,container)
     output=etree.tostring(container, pretty_print=True)
-    with open("../parts/part1_1.html","r") as file:
+    with open("./parts/part1_1.html","r") as file:
         part1=file.read()
-    with open("../parts/part1_2.html","r") as file:
+    with open("./parts/part1_2.html","r") as file:
         part2=file.read()
-    with open("../parts/part1.html","w") as file:
+    with open("./parts/part1.html","w") as file:
         file.write(part1+output+part2)
     return
 def writescanlog():
     localtime==time.localtime(time.time())
-    with open("../log/scanlog.txt","a") as log:
+    with open("./log/scanlog.txt","a") as log:
         log.write(str(localtime[3])+':'+str(localtime[4])+'on the'+str(localtime[2])+'.'+str(localtime[1])+'.'+str(localtime[0])[-2:])
         log.write("Scanned Wifi for my Devices")

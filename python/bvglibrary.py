@@ -72,15 +72,15 @@ def writexml(times_in, lines_in, destinations_in):
 
     return output
 def writeindex(input):
-    with open("../parts/part1.html","r") as file:
+    with open("./parts/part1.html","r") as file:
         part1=file.read()
-    with open("../parts/part2.html","r") as file:
+    with open("./parts/part2.html","r") as file:
         part2=file.read()
-    with open("../parts/index.html",'w') as file:
+    with open("./index.html",'w') as file:
         file.write(part1+input+part2)
     return
 def writebvglog():
     localtime==time.localtime(time.time())
-    with open("../log/bvglog.txt","a") as log:
+    with open("./log/bvglog.txt","a") as log:
         log.write(str(localtime[3])+':'+str(localtime[4])+'on the'+str(localtime[2])+'.'+str(localtime[1])+'.'+str(localtime[0])[-2:])
         log.write("Obtained Traffic Data from bvg.de")
