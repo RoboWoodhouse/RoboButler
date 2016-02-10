@@ -24,11 +24,11 @@ def getstatus(devices):
                 devices[j].turn_on()
     return devices
 
-def writexmlrow(device,container,number):
+def writexmlrow(device,number):
     if (number==1):
-        col=etree.Element(container,'div',{'class':'col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 placeholder'})
+        col=etree.Element('div',{'class':'col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 placeholder'})
     else:
-        col=etree.Element(container,'div',{'class':'col-lg-2 col-md-2 placeholder'})
+        col=etree.Element('div',{'class':'col-lg-2 col-md-2 placeholder'})
     if (device.status=='on'):
         image1=etree.SubElement(col,'img',{'src':'./images/green.png','width':'200','height':'200','class':'img-responsive','align':'center'})
     else:
@@ -41,7 +41,7 @@ def writexmlpart(devices):
     output=''
     i=1
     for instance in devices:
-        output=output+writexmlrow(instance,container,i)
+        output=output+writexmlrow(instance,i)
         i=i+1
     with open("./content/activity.php","w") as file:
         file.write(output)

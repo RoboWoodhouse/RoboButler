@@ -1,5 +1,3 @@
-<div class="table-responsive">
-<table class="table table-striped">
 <thead>
   <tr>
     <th>Time</th>
@@ -9,115 +7,138 @@
 </thead>
 <tbody>
   <tr>
-    <th>18:17</th>
-    <th>Bus  377</th>
-    <th>S Plänterwald</th>
-  </tr>
-  <tr>
-    <th>18:17</th>
-    <th>U8</th>
-    <th>U Osloer Str. (Berlin)</th>
-  </tr>
-  <tr>
-    <th>18:17</th>
-    <th>S46</th>
-    <th>S Westend (Berlin)</th>
-  </tr>
-  <tr>
-    <th>18:17</th>
+    <th>18:27 </th>
     <th>S42</th>
     <th>Ringbahn S 42</th>
   </tr>
   <tr>
-    <th>18:17</th>
+    <th></th>
     <th>S42</th>
     <th>Ringbahn S 42</th>
   </tr>
   <tr>
-    <th>18:17</th>
-    <th>Bus  246</th>
-    <th>U Friedrich-Wilhelm-Platz</th>
-  </tr>
-  <tr>
-    <th>18:17</th>
-    <th>Bus  M44</th>
-    <th>Buckow-Süd, Stuthirtenweg</th>
-  </tr>
-  <tr>
-    <th>18:19</th>
-    <th>S41</th>
-    <th>Ringbahn S 41</th>
-  </tr>
-  <tr>
-    <th>18:19</th>
-    <th>S41</th>
-    <th>Ringbahn S 41</th>
-  </tr>
-  <tr>
-    <th>18:19</th>
-    <th>S46</th>
-    <th>S Königs Wusterhausen Bhf</th>
-  </tr>
-  <tr>
-    <th>18:20</th>
-    <th>Bus  370</th>
-    <th>Neukölln, Am Oberhafen</th>
-  </tr>
-  <tr>
-    <th>18:21</th>
-    <th>Bus  370</th>
-    <th>Neukölln, Am Oberhafen</th>
-  </tr>
-  <tr>
-    <th>18:22</th>
+    <th>18:27 </th>
     <th>U8</th>
     <th>S+U Wittenau (Berlin) [U8]</th>
   </tr>
   <tr>
-    <th>18:24</th>
-    <th>S47</th>
-    <th>S Spindlersfeld (Berlin)</th>
-  </tr>
-  <tr>
-    <th>18:27</th>
-    <th>U8</th>
-    <th>U Osloer Str. (Berlin)</th>
-  </tr>
-  <tr>
-    <th>18:27</th>
-    <th>S42</th>
-    <th>Ringbahn S 42</th>
-  </tr>
-  <tr>
-    <th>18:27</th>
-    <th>S42</th>
-    <th>Ringbahn S 42</th>
-  </tr>
-  <tr>
-    <th>18:27</th>
+    <th></th>
     <th>Bus  M44</th>
     <th>Buckow-Süd, Stuthirtenweg</th>
   </tr>
   <tr>
+    <th>18:27</th>
+    <th>S45</th>
+    <th>S Südkreuz Bhf (Berlin)</th>
+  </tr>
+  <tr>
+    <th>18:27</th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th>18:27</th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th>18:28</th>
+    <th>S45</th>
+    <th>S Flughafen Berlin-Schönefeld Bhf</th>
+  </tr>
+  <tr>
+    <th>18:28</th>
+    <th>S41</th>
+    <th>Ringbahn S 41</th>
+  </tr>
+  <tr>
     <th>18:29</th>
+    <th>S41</th>
+    <th>Ringbahn S 41</th>
+  </tr>
+  <tr>
+    <th>18:29</th>
+    <th>S41</th>
+    <th>Ringbahn S 41</th>
+  </tr>
+  <tr>
+    <th>18:29</th>
+    <th>S41</th>
+    <th>Ringbahn S 41</th>
+  </tr>
+  <tr>
+    <th>18:30 </th>
+    <th>Bus  377</th>
+    <th>Neukölln, Kranoldstr.</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Bus  M44</th>
+    <th>Alt-Buckow</th>
+  </tr>
+  <tr>
+    <th>18:30 </th>
+    <th>U8</th>
+    <th>S+U Wittenau (Berlin) [U8]</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th>18:32</th>
     <th>Bus  277</th>
     <th>Marienfelde, Stadtrandsiedlung</th>
   </tr>
   <tr>
-    <th>18:29</th>
+    <th>18:32</th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th>18:32</th>
     <th>S41</th>
     <th>Ringbahn S 41</th>
   </tr>
   <tr>
-    <th>18:29</th>
+    <th>18:32</th>
     <th>S41</th>
     <th>Ringbahn S 41</th>
   </tr>
   <tr>
-    <th>18:29</th>
+    <th>18:34</th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th>18:39 </th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>U8</th>
+    <th>S+U Wittenau (Berlin) [U8]</th>
+  </tr>
+  <tr>
+    <th>18:43 </th>
+    <th>Bus  M44</th>
+    <th>Buckow-Süd, Stuthirtenweg</th>
+  </tr>
+  <tr>
+    <th></th>
     <th>S45</th>
-    <th>S Flughafen Berlin-Schönefeld Bhf</th>
+    <th>S Südkreuz Bhf (Berlin)</th>
+  </tr>
+  <tr>
+    <th>18:43 </th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>S42</th>
+    <th>Ringbahn S 42</th>
   </tr>
 </tbody>
-</table>
-</div>
