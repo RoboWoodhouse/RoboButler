@@ -61,7 +61,7 @@ def writexml(times_in, lines_in, destinations_in):
     th2.text='Line'
     th2=etree.SubElement(tr,'th')
     th2.text='Destination'
-    tbody=etree.Element('tbody')
+    tbody=etree.SubElement(table,'tbody')
     for i in xrange(0,len(times_in)):
         tr=etree.SubElement(tbody,'tr')
         th=etree.SubElement(tr,'th')
@@ -70,7 +70,7 @@ def writexml(times_in, lines_in, destinations_in):
         th2.text=str(lines_in[i])
         th3=etree.SubElement(tr,'th')
         th3.text=destinations_in[i]
-    output=etree.tostring(thead, pretty_print=True)+etree.tostring(tbody, pretty_print=True, encoding='utf-8')
+    output=etree.tostring(container, pretty_print=True, encoding='utf-8')
 
     return output
 def writeindex(input):
