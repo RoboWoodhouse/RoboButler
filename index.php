@@ -6,14 +6,16 @@
   </head>
 
   <body>
-  <nav  class="navbar navbar-inverse navbar-fixed-top">
+  <nav  class="navbar navbar-inverse">
     <?php include ('content/navbar.php'); ?>
   </nav>
 
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 main">
+        <center>
         <h1 class="page-header">Dashboard</h1>
+        </center>
       </div><!--Page Header-->
     </div><!-- row-->
     <div class="row">

@@ -30,9 +30,9 @@ def writexmlrow(device,number):
     else:
         col=etree.Element('div',{'class':'col-lg-2 col-md-2 placeholder'})
     if (device.status=='on'):
-        image1=etree.SubElement(col,'img',{'src':'./images/green.png','width':'200','height':'200','class':'img-responsive','align':'center'})
+        image1=etree.SubElement(col,'img',{'src':'./images/green.png','width':'200','height':'200','class':'img-thumbnail','align':'center'})
     else:
-        image1=etree.SubElement(col,'img',{'src':'./images/gray.png','width':'200','height':'200','class':'img-responsive','align':'center'})
+        image1=etree.SubElement(col,'img',{'src':'./images/gray.png','width':'200','height':'200','class':'img-thumbnail','align':'center'})
     label1=etree.SubElement(col,'h4',{'align':'center'})
     label1.text=device.name
     return etree.tostring(col, pretty_print=True)
