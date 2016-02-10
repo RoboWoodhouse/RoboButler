@@ -51,7 +51,9 @@ def detfreq(time_in):
             sleeptime=1200
     return sleeptime
 def writexml(times_in, lines_in, destinations_in):
-    thead=etree.Element('thead')
+    container=etree.Element('div',{'class':'table-responsive'})
+    table=etree.SubElement(container,'table',{'class':'table table-striped'})
+    thead=etree.SubElement(table,'thead')
     tr=etree.SubElement(thead,'tr')
     th=etree.SubElement(tr,'th')
     th.text='Time'
@@ -72,12 +74,8 @@ def writexml(times_in, lines_in, destinations_in):
 
     return output
 def writeindex(input):
-    with open("./parts/part1.html","r") as file:
-        part1=file.read()
-    with open("./parts/part2.html","r") as file:
-        part2=file.read()
-    with open("./index.html",'w') as file:
-        file.write(part1+input+part2)
+    with open("./content/bvg.php",'w') as file:
+        file.write(input)
     return
 def writebvglog():
     localtime==time.localtime(time.time())

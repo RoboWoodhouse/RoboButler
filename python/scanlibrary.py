@@ -26,30 +26,25 @@ def getstatus(devices):
 
 def writexmlrow(device,container,number):
     if (number==1):
-        col=etree.SubElement(container,'div',{'class':'col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 placeholder'})
+        col=etree.Element(container,'div',{'class':'col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 placeholder'})
     else:
-        col=etree.SubElement(container,'div',{'class':'col-lg-2 col-md-2 placeholder'})
+        col=etree.Element(container,'div',{'class':'col-lg-2 col-md-2 placeholder'})
     if (device.status=='on'):
         image1=etree.SubElement(col,'img',{'src':'./images/green.png','width':'200','height':'200','class':'img-responsive','align':'center'})
     else:
         image1=etree.SubElement(col,'img',{'src':'./images/gray.png','width':'200','height':'200','class':'img-responsive','align':'center'})
     label1=etree.SubElement(col,'h4',{'align':'center'})
     label1.text=device.name
-    return
+    return etree.tostring(col, pretty_print=True)
 
 def writexmlpart(devices):
-    container=etree.Element('div',{'class':'row placeholder'})
+    output=''
     i=1
     for instance in devices:
-        writexmlrow(instance,container,i)
+        output=output+writexmlrow(instance,container,i)
         i=i+1
-    output=etree.tostring(container, pretty_print=True)
-    with open("./parts/part1_1.html","r") as file:
-        part1=file.read()
-    with open("./parts/part1_2.html","r") as file:
-        part2=file.read()
-    with open("./parts/part1.html","w") as file:
-        file.write(part1+output+part2)
+    with open("./content/activity.php","w") as file:
+        file.write(output)
     return
 def writescanlog():
     localtime==time.localtime(time.time())
